@@ -1,0 +1,34 @@
+/* Enhanced Animations */
+@keyframes typing {
+    0%, 100% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-3px); opacity: 1; }
+}
+
+.message-enter {
+    animation: messageEnter 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@keyframes messageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Message Bubbles */
+.prose pre {
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.prose code {
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+} 
